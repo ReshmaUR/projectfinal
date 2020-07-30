@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+.left{
+    width: 15%;
+    background-color: royalblue;
+    border-radius: 20px;
+    height: max-content;
+    margin-left: 6px;
+   text-align: center;
+}
+.right{
+    margin-left: 20px;
+    width: 90%;
+    /* width: max-content; */
+    background-color: black;
+    color: white;
+    height: max-content;
+   
+}

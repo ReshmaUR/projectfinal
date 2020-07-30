@@ -1,0 +1,22 @@
+
+<div class="row" *ngFor = 'let job of jobs'>
+    <div class="col-md-3" style="padding-left: 20px;">
+        <h3>{{job.name}}</h3><br>
+        <p>{{job.role}}</p>
+        <p>{{job.organisation}}</p>
+        <p>No:of vacancies: {{job.vacancy}}</p>
+        <p>Job location: {{job.location}}</p>
+        <p>Last updated: {{job.updation}}</p>
+        <p>Last date of application: {{job.lastdate}}</p>
+    </div>
+    <div class="col-md-9" style="margin-top: 50px;">
+        <h6>{{job.description}}</h6><br>
+        <h6>{{job.link}}</h6><br>
+        <a [routerLink]="['/update',job._id]" style="padding-left: 160px;"><i class="fas fa-pencil-alt"></i></a>
+        <a routerLink = 'admin' style="padding-left: 20px;" (click) = 'deleteJob(job._id)'><i class="fas fa-trash"></i></a>
+    </div>
+    <hr style="color: white;"><br><br>
+</div>
+
+<!-- <i class="fas fa-pencil-alt"></i> -->
+<!-- <i class="fas fa-trash"></i> -->

@@ -1,0 +1,50 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand" routerLink="#">Engineer's Corner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkAction="active">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/jobs" routerLinkAction="active">Joblist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ljobs" routerLinkAction="active">TopJobs</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="/add" routerLinkAction="active">AddJob</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="/admin" routerLinkAction="active">Admin</a>
+        </li> -->
+
+        <li class="nav-item" style="padding-left: 650px;">
+          <a class="nav-link" routerLink="/select" routerLinkAction="active">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/register" routerLinkAction="active">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()" routerLink="/" routerLinkAction="active">Logout</a>
+        </li>
+
+        <!-- <li class="nav-item" style="padding-left: 650px;">
+          <a class="nav-link" *ngIf="!isLoggedIn" routerLink="/login" routerLinkAction="active">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()" *ngIf="isLoggedIn" routerLink="/login" routerLinkAction="active">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="!isLoggedIn" routerLink="/register" routerLinkAction="active">Register</a>
+        </li> -->
+
+
+
+
+      </ul>
+    </div>
+  </nav>

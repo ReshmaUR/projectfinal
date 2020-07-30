@@ -1,0 +1,15 @@
+<div class="row" *ngFor = 'let job of jobs'>
+    <div class="col-md-3" style="padding-left: 20px;">
+        <h3>{{job.name}}</h3><br>
+        <p>{{job.role}}</p>
+        <p>No:of vacancies: {{job.vacancy}}</p>
+        <p>Job location: {{job.location}}</p>
+        <p>Last updated: {{job.updation}}</p>
+        <p>Last date of application: {{job.lastdate}}</p>
+    </div>
+    <div class="col-md-9" style="margin-top: 40px;">
+        <h5>{{job.description}}</h5><br>
+        <h5><a href= "{{job.link}}" target="_blank">Apply now</a></h5>
+    </div>
+    <hr><br><br>
+</div>

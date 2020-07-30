@@ -1,0 +1,42 @@
+<form class="form" style="margin: 100px" (ngSubmit) = "UpdateJob()" autocomplete="off">
+    <h3>Add a new job</h3>
+    <div class="form-group">
+      <label>Name of job</label>
+      <input type="text" class="form-control" name="j_name" [(ngModel)] = "updateItem.name" style="width: 450px;">
+    </div>
+    <div class="form-group">
+      <label>Role of job</label>
+      <input type="text" class="form-control" name="j_role" [(ngModel)]='updateItem.role' style="width: 450px;">
+    </div>
+    <div class="form-group">
+      <label>No of vacancies</label>
+      <input type="number" class="form-control" name="j_vacancy" [(ngModel)] = "updateItem.vacancy" style="width: 450px;">
+    </div>
+    <div class="form-group">
+      <label>Job location</label>
+      <input type="text" class="form-control" name="j_location" [(ngModel)] = "updateItem.location" style="width: 450px;">
+    </div>
+      <div class="form-group">
+        <label>Name of organisation</label>
+        <input type="text" class="form-control" name="j_organisation" [(ngModel)] = "updateItem.organisation" style="width: 450px;">
+      </div>
+      <div class="form-group">
+        <label>Date of Updation</label>
+        <input type="text" class="form-control" name="j_updation" [(ngModel)] = "updateItem.updation" style="width: 450px;">
+      </div>
+      <div class="form-group">
+        <label>Last date of application</label>
+        <input type="text" class="form-control" name="j_lastdate" [(ngModel)] = "updateItem.lastdate" style="width: 450px;">
+      </div>
+      <div class="form-group">
+        <label>About the job</label>
+        <input type="text" class="form-control" name="j_description" [(ngModel)] = "updateItem.description" style="width: 450px;">
+      </div>
+      <div class="form-group">
+        <label>Application link</label>
+        <input type="text" class="form-control" name="j_link" [(ngModel)] = "updateItem.link" style="width: 450px;">
+      </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+

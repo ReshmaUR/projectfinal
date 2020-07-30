@@ -1,0 +1,26 @@
+<br>
+<div class="row" *ngFor = 'let job of jobs' class="main">    
+    <!-- <%for(i=0;i<books.length;i++){%> -->
+        <div class="row">    
+          <br>
+          <div class="col-md-2 col-sm-6">  <!--sm3-->
+            <!-- <a class="story-title" href="#"><img alt="" src="/images/<%=books[i].image%>" style="width:200px;height:200px" id="allimg"></a> -->
+          </div>
+          <div class="col-md-10 col-sm-12">  <!--sm9-->
+            <h3 id="step1">{{job.name}}</h3>
+            <div class="row">
+              <div class="col-lm-12">  <!--xs9-->
+                <h4><span class="label label-default" id="step2">{{job.role}}</span></h4><h4>
+                <small style="font-family:courier,'new courier';" class="text-muted text-center" id="step3"> Last Date of application: {{job.lastdate}}  </small>
+                </h4></div>
+              <div class="col-xs-3"></div>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <hr><br>
+    <!-- <%}%> -->
+ 
+</div>
+
+<!-- • <a routerLink="#" class="text-muted">Read More</a> -->
